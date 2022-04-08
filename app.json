@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/vloggerdeven/vellachilaano",
-    "repository": "https://github.com/vloggerdeven/vellachilaano",
+    "website": "https://github.com/vloggerdeven/Perfect-Ok",
+    "repository": "https://github.com/vloggerdeven/Perfect-Ok",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
