@@ -425,12 +425,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             msg = await client.send_cached_media(
                 chat_id=AUTH_CHANNEL,
                 file_id=file_id,
-                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>[DK_BOTx] {title}</code>\n\n⚠️ This file will be deleted in 5 minute as it has copyright ... !!!\n\nAfter moving from here to saved message or somewhere else, download ... !!!\n\n♻️ 𝗝𝗢𝗜𝗡 : <b>@S_MOVIE_CHATS</b>\n♻️ 𝗝𝗢𝗜𝗡 : <b>@S_FILE_UPDATES</b>',
+                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>[CpFlicks] {title}</code>\n\n⚠️ This file will be deleted in 1 minute as it has copyright ... !!!\n\nകോപ്പിറൈറ്റ് ഉള്ളതുകൊണ്ട് ഫയൽ 1 മിനിറ്റിനുള്ളിൽ ഇവിടെനിന്നും ഡിലീറ്റ് ആകുന്നതാണ് അതുകൊണ്ട് ഇവിടെ നിന്നും മറ്റെവിടെക്കെങ്കിലും മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക!\n\n♻️ 𝗝𝗢𝗜𝗡 : <b>@CpFlicks</b>',
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
                 f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n<b>📫 Your File is Ready</b>\n\n'           
-                f'<b>📂 Fɪʟᴇ Nᴀᴍᴇ</b> : <code>[DK_BOTx] {title}</code>\n\n'              
+                f'<b>📂 Fɪʟᴇ Nᴀᴍᴇ</b> : <code>[CpFlicks] {title}</code>\n\n'              
                 f'<b>⚙️ Fɪʟᴇ Sɪᴢᴇ</b> : <b>{size}</b>',
                 True,
                 'html',
@@ -440,7 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton('📥 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽 𝖫𝗂𝗇𝗄 📥 ', url = msg.link)
                         ],                       
                         [
-                            InlineKeyboardButton("⚠️ 𝖢𝖺𝗇'𝗍 𝖠𝖼𝖼𝖾𝗌𝗌 ❓ 𝖢𝗅𝗂𝖼𝗄 𝖧𝖾𝗋𝖾 ⚠️", url=f'https://t.me/+tu5TMHWzu9JiZWE1')
+                            InlineKeyboardButton("⚠️ 𝖢𝖺𝗇'𝗍 𝖠𝖼𝖼𝖾𝗌𝗌 ❓ 𝖢𝗅𝗂𝖼𝗄 𝖧𝖾𝗋𝖾 ⚠️", url=f'https://t.me/+hJl6KjpzYJNhYWFl')
                         ]
                     ]
                 )
@@ -495,8 +495,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-        InlineKeyboardButton('ᴅᴋ ʙᴏᴛx', url='https://t.me/dk_botx'),
-        InlineKeyboardButton('ᴍʏ ɢʀᴏᴜᴘ', url ='https://t.me/s_movie_chats')
+        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
+        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
@@ -599,8 +599,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about_menu":
         buttons = [[
-            InlineKeyboardButton('Back🎀', callback_data='about'),
-            InlineKeyboardButton('Close💤', callback_data='close')
+            InlineKeyboardButton('ᴄᴘ ғʟɪᴄᴋs', url='https://t.me/cpflicks'),
+            InlineKeyboardButton('ᴍᴏᴠɪᴇs', url='https://t.me/joinchat/t2g8dRPeSps2MDI9'),
+            InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
