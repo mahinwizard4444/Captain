@@ -425,7 +425,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             msg = await client.send_cached_media(
                 chat_id=AUTH_CHANNEL,
                 file_id=file_id,
-                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>[onlymovie76] {title}</code>\n\n⚠️ <b>This file will be deleted in 5 minute as it has copyright ... !!!</b>\n\n<b>കോപ്പിറൈറ്റ് ഉള്ളതുകൊണ്ട് ഫയൽ 5 മിനിറ്റിനുള്ളിൽ ഇവിടെനിന്നും ഡിലീറ്റ് ആകുന്നതാണ് അതുകൊണ്ട് ഇവിടെ നിന്നും മറ്റെവിടെക്കെങ്കിലും മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക!</b>\n\n♻️ 𝗝𝗢𝗜𝗡 : <b>@CpFlicks</b>',
+                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>[onlymovie76] {title}</code>\n\n⚠️ <b>This file will be deleted in 5 minute as it has copyright ... !!!</b>\n\n<b>കോപ്പിറൈറ്റ് ഉള്ളതുകൊണ്ട് ഫയൽ 5 മിനിറ്റിനുള്ളിൽ ഇവിടെനിന്നും ഡിലീറ്റ് ആകുന്നതാണ് അതുകൊണ്ട് ഇവിടെ നിന്നും മറ്റെവിടെക്കെങ്കിലും മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക!</b>\n\n♻️ 𝗝𝗢𝗜𝗡 : <b>@onlymovie76</b>',
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
@@ -599,8 +599,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about_menu":
         buttons = [[
-            InlineKeyboardButton('ᴄᴘ ғʟɪᴄᴋs', url='https://t.me/cpflicks'),
-            InlineKeyboardButton('ᴍᴏᴠɪᴇs', url='https://t.me/joinchat/t2g8dRPeSps2MDI9'),
+            InlineKeyboardButton('ᴍᴏᴠɪᴇs', url='https://t.me/onlymovie76'),
+            InlineKeyboardButton('sᴇʀɪᴇs', url='https://t.me/TvSeriesLand4U'),
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
