@@ -425,12 +425,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             msg = await client.send_cached_media(
                 chat_id=AUTH_CHANNEL,
                 file_id=file_id,
-                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>[CpFlicks] {title}</code>\n\n⚠️ <b>This file will be deleted in 5 minute as it has copyright ... !!!</b>\n\n<b>കോപ്പിറൈറ്റ് ഉള്ളതുകൊണ്ട് ഫയൽ 5 മിനിറ്റിനുള്ളിൽ ഇവിടെനിന്നും ഡിലീറ്റ് ആകുന്നതാണ് അതുകൊണ്ട് ഇവിടെ നിന്നും മറ്റെവിടെക്കെങ്കിലും മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക!</b>\n\n♻️ 𝗝𝗢𝗜𝗡 : <b>@CpFlicks</b>',
+                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>[onlymovie76] {title}</code>\n\n⚠️ <b>This file will be deleted in 5 minute as it has copyright ... !!!</b>\n\n<b>കോപ്പിറൈറ്റ് ഉള്ളതുകൊണ്ട് ഫയൽ 5 മിനിറ്റിനുള്ളിൽ ഇവിടെനിന്നും ഡിലീറ്റ് ആകുന്നതാണ് അതുകൊണ്ട് ഇവിടെ നിന്നും മറ്റെവിടെക്കെങ്കിലും മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക!</b>\n\n♻️ 𝗝𝗢𝗜𝗡 : <b>@CpFlicks</b>',
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
                 f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n<b>📫 Your File is Ready</b>\n\n'           
-                f'<b>📂 Fɪʟᴇ Nᴀᴍᴇ</b> : <code>[CpFlicks] {title}</code>\n\n'              
+                f'<b>📂 Fɪʟᴇ Nᴀᴍᴇ</b> : <code>[onlymovie76] {title}</code>\n\n'              
                 f'<b>⚙️ Fɪʟᴇ Sɪᴢᴇ</b> : <b>{size}</b>',
                 True,
                 'html',
